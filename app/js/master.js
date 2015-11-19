@@ -4,7 +4,6 @@ var countriesApp = angular.module('countriesApp',['ngAnimate', 'ngRoute']);
 countriesApp.config(function($routeProvider, $locationProvider) {
     $routeProvider.when('/', {
         templateUrl: 'pages/home.html',
-        controller: 'HomeController'
     })
     .when('/countDetails', {
         templateUrl: 'pages/countDetails.html',
