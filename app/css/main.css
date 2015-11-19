@@ -15,10 +15,18 @@ header {
     margin: 75px auto;
     text-align: center; }
 
-.btn-intro {
+.btn-intro, .full-width .btn-home {
   border: 2px solid #000;
   box-shadow: 2px 2px 3px #000;
   border-radius: 0; }
+
+/*--COUNTRIES --*/
+.full-width {
+  width: 58%;
+  margin: 0 auto; }
+  .full-width .btn-home {
+    width: 20%;
+    margin: 30px 23%; }
 
 /*-- ANIMATIONS --*/
 .animate-view-container {

@@ -5,13 +5,13 @@ countriesApp.config(function($routeProvider, $locationProvider) {
     $routeProvider.when('/', {
         templateUrl: 'pages/home.html',
     })
-    .when('/countDetails', {
-        templateUrl: 'pages/countDetails.html',
-        controller: 'DetailsController'
+    .when('/countries/:country/capital', {
+        templateUrl: 'pages/capital.html',
+        controller: 'CapitalController'
     })
-    .when('/countList', {
-        templateUrl: 'pages/countList.html',
-        controller: 'ListController'
+    .when('/countries', {
+        templateUrl: 'pages/countries.html',
+        controller: 'CountryController'
     })
     .otherwise('/');
 });

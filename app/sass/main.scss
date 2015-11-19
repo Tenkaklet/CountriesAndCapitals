@@ -25,6 +25,18 @@ header {
     border-radius: 0;
 }
 
+/*--COUNTRIES --*/
+.full-width {
+    width: 58%;
+    margin: 0 auto;
+    .btn-home {
+        @extend .btn-intro;
+        width: 20%;
+        margin: 30px 23%;
+    }
+}
+
+
 /*-- ANIMATIONS --*/
 .animate-view-container {
     position: relative;
