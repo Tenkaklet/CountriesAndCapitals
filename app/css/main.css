@@ -28,6 +28,9 @@ header {
     width: 20%;
     margin: 30px 23%; }
 
+tr {
+  cursor: pointer; }
+
 /*-- ANIMATIONS --*/
 .animate-view-container {
   position: relative;

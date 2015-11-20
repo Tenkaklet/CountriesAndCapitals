@@ -3,15 +3,19 @@
 var countriesApp = angular.module('countriesApp',['ngAnimate', 'ngRoute']);
 countriesApp.config(function($routeProvider, $locationProvider) {
     $routeProvider.when('/', {
-        templateUrl: 'pages/home.html',
-    })
-    .when('/countries/:country/capital', {
-        templateUrl: 'pages/capital.html',
-        controller: 'CapitalController'
+        templateUrl: './pages/home.html',
     })
     .when('/countries', {
-        templateUrl: 'pages/countries.html',
+        templateUrl: './pages/countries.html',
         controller: 'CountryController'
     })
+    .when('/countries/:country/', {
+        templateUrl: './pages/capital.html',
+        controller: 'CapitalController'
+    })
     .otherwise('/');
+    $locationProvider.html5Mode({
+        enabled: false,
+        requireBase: true
+    });
 });
