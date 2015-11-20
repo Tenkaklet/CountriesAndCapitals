@@ -1,7 +1,7 @@
 // Master file of app initiation and configuration
 
 var countriesApp = angular.module('countriesApp',['ngAnimate', 'ngRoute']);
-countriesApp.config(function($routeProvider, $locationProvider) {
+countriesApp.config(function($routeProvider) {
     $routeProvider.when('/', {
         templateUrl: './pages/home.html',
     })
@@ -9,13 +9,9 @@ countriesApp.config(function($routeProvider, $locationProvider) {
         templateUrl: './pages/countries.html',
         controller: 'CountryController'
     })
-    .when('/countries/:country/', {
+    .when('/countries/:country/:countryCode', {
         templateUrl: './pages/capital.html',
         controller: 'CapitalController'
     })
-    .otherwise('/');
-    $locationProvider.html5Mode({
-        enabled: false,
-        requireBase: true
-    });
+    .otherwise({redirectTo: '/'});
 });

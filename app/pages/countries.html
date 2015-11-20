@@ -12,8 +12,8 @@
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="country in countries | orderBy: 'name'"  ng-click="viewCountry()">
-                    <td>{{country.countryName}}</a></td>
+                <tr ng-repeat="country in countries | orderBy: 'name'">
+                    <td><a href="#/countries/{{country.countryName}}/{{country.countryCode}}">{{country.countryName}}</a></td>
                     <td>{{country.countryCode}}</td>
                     <td>{{country.capital}}</td>
                     <td>{{country.areaInSqKm | number}} km<sup>2</sup></td>
@@ -25,3 +25,6 @@
             <a href="/" class="btn btn-home center-block">HOME</a>
     </div>
 </div>
+
+
+<!-- MAKE TO THE GET IS PARSED. -->
