@@ -9,7 +9,7 @@ countriesApp.config(function($routeProvider) {
         templateUrl: './pages/countries.html',
         controller: 'CountryController'
     })
-    .when('/countries/:country/:countryCode', {
+    .when('/countries/:country/:countryCode/:continent/:population/:area/:capital', {
         templateUrl: './pages/capital.html',
         controller: 'CapitalController'
     })

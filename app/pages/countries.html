@@ -12,8 +12,8 @@
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="country in countries | orderBy: 'name'">
-                    <td><a href="#/countries/{{country.countryName}}/{{country.countryCode}}">{{country.countryName}}</a></td>
+                <tr ng-repeat="country in countries | orderBy: 'countryName'">
+                    <td><a href="#/countries/{{country.countryName}}/{{country.countryCode}}/{{country.continent}}/{{country.population}}/{{country.areaInSqKm}}/{{country.capital}}">{{country.countryName}}</a></td>
                     <td>{{country.countryCode}}</td>
                     <td>{{country.capital}}</td>
                     <td>{{country.areaInSqKm | number}} km<sup>2</sup></td>

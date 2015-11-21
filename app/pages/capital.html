@@ -1,6 +1,11 @@
 <div class="container">
 <h1>{{country}}</h1>
 <h2>{{population | number}}</h2>
-<h2>{{fcode}}</h2>
+<h2>{{area | number}}</h2>
+<h2>{{capital}}</h2>
+<div ng-repeat="neighbor in neighbours">
+    <a ng-href="#/countries/{{neighbor.countryName}}/{{neighbor.countryCode}}/{{continent}}/{{neighbor.population}}">{{neighbor.countryName}}</a>
+</div>
 <img ng-src="http://www.geonames.org/img/country/250/{{countryCode}}.png" alt="" />
+<img ng-src="http://www.geonames.org/flags/x/{{countryCode | lowercase}}.gif" alt="" />
 </div>
