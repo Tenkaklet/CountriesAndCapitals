@@ -21,6 +21,7 @@ countriesApp.controller('CapitalController' , ['$scope', '$http', '$routeParams'
     $routeParams = {
         country: $scope.country,
         population: $scope.population,
+        continent: $scope.continent,
     };
     console.log($routeParams);
     // $http.get(searchURL, {searchParams: searchParams})
