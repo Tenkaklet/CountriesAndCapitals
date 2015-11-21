@@ -21,16 +21,19 @@ countriesApp.controller('CapitalController' , ['$scope', '$http', '$routeParams'
         q: $scope.country,
         isNameRequired: true,
         name_equals: $scope.country,
-        country: $routeParams.countryCode
+        country: $routeParams.countryCode,
+        population: $routeParams.population,
     };
     // GEt country code.
-    console.log($routeParams.country);
     $scope.country = $routeParams.country;
     $scope.countryCode = $routeParams.countryCode;
     $scope.continent = $routeParams.continent;
     $scope.population = $routeParams.population;
-    console.log($routeParams.countryCode);
-    console.log($routeParams.population);
+    $routeParams = {
+        country: $scope.country,
+        population: $scope.population,
+    };
+    console.log($routeParams);
     // $http.get(searchURL, {searchParams: searchParams})
     // .then(function (response) {
     //     $scope.countries = response.data.geonames;
