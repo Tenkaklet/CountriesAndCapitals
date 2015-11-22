@@ -13,8 +13,9 @@
             </thead>
             <tbody>
                 <tr ng-repeat="country in countries | orderBy: 'countryName'">
-                    <td><a href="#/countries/{{country.countryName}}/{{country.countryCode}}/{{country.continent}}/{{country.population}}/{{country.areaInSqKm}}/{{country.capital}}">{{country.countryName}}</a></td>
+                    <td><a href="#/countries/{{country.countryName}}/{{country.countryCode}}/{{country.continent}}/{{country.population}}/{{country.areaInSqKm}}/{{country.capital}}/{{countcountry.capPopulation}}">{{country.countryName}}</a></td>
                     <td>{{country.countryCode}}</td>
+                    <td>{{country.capPopulation}}</td>
                     <td>{{country.capital}}</td>
                     <td>{{country.areaInSqKm | number}} km<sup>2</sup></td>
                     <td>{{country.population}}</td>
@@ -22,9 +23,6 @@
                 </tr>
             </tbody>
         </table>
-            <a href="/" class="btn btn-home center-block">HOME</a>
+            <a href="#/" class="btn btn-home center-block">HOME</a>
     </div>
 </div>
-
-
-<!-- MAKE TO THE GET IS PARSED. -->

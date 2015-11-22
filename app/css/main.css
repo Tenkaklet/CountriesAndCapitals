@@ -31,6 +31,23 @@ header {
 tr {
   cursor: pointer; }
 
+/*-- CAPITALS --*/
+.full-width span {
+  font-weight: 900; }
+.full-width ul {
+  list-style: none; }
+  .full-width ul li {
+    display: inline; }
+    .full-width ul li img {
+      width: 40%;
+      height: 40%; }
+.full-width a {
+  color: #a80000;
+  transition: all 0.1s ease-in-out; }
+  .full-width a:hover {
+    font-weight: 700;
+    text-decoration: none; }
+
 /*-- ANIMATIONS --*/
 .animate-view-container {
   position: relative;

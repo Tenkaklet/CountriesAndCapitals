@@ -34,11 +34,35 @@ header {
         width: 20%;
         margin: 30px 23%;
     }
+
 }
 tr {
     cursor: pointer;
 }
-
+/*-- CAPITALS --*/
+.full-width {
+    span {
+        font-weight: 900;
+    }
+    ul {
+        list-style: none;
+        li {
+            display: inline;
+            img {
+                width: 40%;
+                height: 40%;
+            }
+        }
+    }
+    a {
+        color: #a80000;
+        transition: all 0.1s ease-in-out;
+        &:hover {
+            font-weight: 700;
+            text-decoration: none;
+        }
+    }
+}
 /*-- ANIMATIONS --*/
 .animate-view-container {
     position: relative;
